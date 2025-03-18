@@ -1,0 +1,51 @@
+package EXAM;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class user {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		try(sc){
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		  
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","tiger");
+
+		System.out.println(" 1.Insert details.\n  2.Retrieve productdetails in reverse direction.");
+		System.out.println("=============================================");
+		System.out.println("enter your choice");
+		int choice = sc.nextInt();
+		switch(choice) {
+		case 1:{
+			PreparedStatement ps1 = con.prepareStatement("insert into user detail values(?,?,?,?,?)");
+			System.out.println("enter user id");
+			int id = sc.nextInt();
+			System.out.println("enter user name");
+			String name = sc.nextLine();
+			System.out.println("enter user city");
+			String city = sc.nextLine();
+			System.out.println("enter user mail");
+			String email = sc.nextLine();
+			System.out.println("enter user phno");
+			String phno = sc.nextLine();
+			
+
+			ps1.setInt(1, id);
+			ps1.setString(2,name);
+			ps1.setString(3,city);
+			ps1.setString(4,email);
+			ps1.setString(5,phno);
+			
+		}
+			
+		}
+		}catch(Exception e) {
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,50 @@
+package test3;
+
+class order1{
+	
+	private int orderId;
+	private String customerName;
+	private int orderDate;
+	private int totalAmount;
+	public int getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public int getOrderDate() {
+		return orderDate;
+	}
+	public void setOrderDate(int orderDate) {
+		this.orderDate = orderDate;
+	}
+	public int getTotalAmount() {
+		return totalAmount;
+	}
+	public void setTotalAmount(int totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+	@Override
+	public String toString() {
+		return "order1 [orderId=" + orderId + ", customerName=" + customerName + ", orderDate=" + orderDate
+				+ ", totalAmount=" + totalAmount + "]";
+	}
+	
+	
+}
+public class Order {
+
+	public static void main(String[] args) {
+
+
+
+
+	}
+
+}

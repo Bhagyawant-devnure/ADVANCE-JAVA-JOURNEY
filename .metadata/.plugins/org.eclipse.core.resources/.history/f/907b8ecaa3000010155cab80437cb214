@@ -1,0 +1,49 @@
+package test3;
+
+import java.sql.Date;
+
+public class Order {
+	private int ORDERID;
+	private String CUSTOMER_NAME;
+	private Date ORDER_DAT;
+	private int TOTAL_AMOUNT;
+	public int getOrderId() {
+		return ORDERID;
+	}
+	public void setOrderId(int orderId) {
+		this.ORDERID = orderId;
+	}
+	public String getCustomerName() {
+		return getCustomerName();
+	}
+	public void setCustomerName(String customerName) {
+		this.CUSTOMER_NAME = customerName;
+	}
+	public Date getOrderDate() {
+		return getOrderDate();
+	}
+	public void setOrderDate(Date orderDate) {
+		this.ORDER_DAT = orderDate;
+	}
+	public int getTotalAmount() {
+		return getTotalAmount();
+	}
+	public void setTotalAmount(int totalAmount) {
+		this.TOTAL_AMOUNT = totalAmount;
+	}
+	
+	public Order(int orderId, String customerName, Date orderDate, int totalAmount) {
+		super();
+		this.ORDERID = orderId;
+		this.CUSTOMER_NAME = customerName;
+		this.ORDER_DAT = orderDate;
+		this.TOTAL_AMOUNT = totalAmount;
+	}
+	@Override
+	public String toString() {
+		return "order1 [orderId=" + ORDERID + ", customerName=" + CUSTOMER_NAME + ", orderDate=" + ORDER_DAT
+				+ ", totalAmount=" + TOTAL_AMOUNT + "]";
+	}
+	
+
+}

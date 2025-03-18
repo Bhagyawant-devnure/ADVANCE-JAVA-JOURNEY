@@ -1,0 +1,19 @@
+package test3;
+
+class order1{
+	
+	private int orderId;
+	private String customerName;
+	
+	
+}
+public class Order {
+
+	public static void main(String[] args) {
+order1 op = new order1();
+System.out.println("hii");
+
+
+	}
+
+}
